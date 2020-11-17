@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.vorlage_deckblatt {
+    background: linear-gradient(to right, 
+    #363636 7%, #FFFFFF 7%, #FFFFFF 12%, #363636 12%,  #363636 88%, #FFFFFF 88%, #FFFFFF 93%, #363636 93%); 
+    height: 29.65cm;
+    width: 118px;
+}
+.vorlage_cv {
+    background: linear-gradient(to right, 
+    #363636 3%, #FFFFFF 3%, #FFFFFF 5.6%, #363636 5.6%,  #363636 94%, #FFFFFF 94%, #FFFFFF 96.6%, #363636 96.6%); 
+    height: 29.65cm;
+    width: 255px;
+}
+.content_deckblatt{
+    padding-left: 270px;
+}
+.deckblatt_foto{
+    padding-top: 96px;
+    width: 212px;
+    height: auto;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
