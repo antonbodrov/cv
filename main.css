@@ -20,13 +20,13 @@ body {
 .vorlage_deckblatt {
     background: linear-gradient(to right, 
     #363636 7%, #FFFFFF 7%, #FFFFFF 12%, #363636 12%,  #363636 88%, #FFFFFF 88%, #FFFFFF 93%, #363636 93%); 
-    height: 29.65cm;
+    height: 29.68cm;
     width: 118px;
 }
 .vorlage_cv {
     background: linear-gradient(to right, 
     #363636 3%, #FFFFFF 3%, #FFFFFF 5.6%, #363636 5.6%,  #363636 94%, #FFFFFF 94%, #FFFFFF 96.6%, #363636 96.6%); 
-    height: 29.65cm;
+    height: 29.68cm;
     width: 255px;
 }
 .content_deckblatt{
