@@ -25,36 +25,50 @@ h1{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 26px;
+    margin: 0;
+    padding: 0;
 }
 h2{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 h3{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 h4{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 h5{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 h6{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 p{
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 * {
     box-sizing: border-box;
@@ -75,7 +89,6 @@ p{
     #363636 7%, #FFFFFF 7%, #FFFFFF 12%, #363636 12%,  #363636 88%, #FFFFFF 88%, #FFFFFF 93%, #363636 93%); 
     height: 29.68cm;
     width: 118px;
-    
 }
 .vorlage_cv {
     background: linear-gradient(to right, 
@@ -90,6 +103,7 @@ p{
     padding-top: 96px;
     width: 212px;
     height: auto;
+    margin-bottom: 20px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -100,17 +114,24 @@ p{
 }
 .deckblatt_header{
     width: 300px;
-    height: 0;
     text-align: center;
     margin-left: -44px;
 }
 .deckblatt_datum{
-    padding-top: 200px;
+    padding-top: 250px;
     width: 300px;
 }
 .deckblatt_kontaktInfo{
     padding-top: 200px;
     width: 300px;
+}
+.cv_kontaktBlock{
+    padding-top: 50px;
+}
+.line{
+    margin: 0 auto;
+    width: 200px;
+    border-bottom: 1px solid rgb(194, 194, 194);
 }
 @page {
     size: A4;
