@@ -2,7 +2,59 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
-    font: 12pt "Tahoma";
+    font-family: 'Helvetica', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(148, 83, 81);
+}
+::-moz-selection { /* Code for Firefox */
+    color: rgb(219, 219, 219);
+    background: rgb(148, 83, 81);
+  }
+  
+  ::selection {
+    color: rgb(219, 219, 219);
+    background: rgb(148, 83, 81);
+  }
+h1{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+h2{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+h3{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+h4{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+h5{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h6{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+p{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 * {
     box-sizing: border-box;
@@ -16,12 +68,14 @@ body {
     border-radius: 5px;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 .vorlage_deckblatt {
     background: linear-gradient(to right, 
     #363636 7%, #FFFFFF 7%, #FFFFFF 12%, #363636 12%,  #363636 88%, #FFFFFF 88%, #FFFFFF 93%, #363636 93%); 
     height: 29.68cm;
     width: 118px;
+    
 }
 .vorlage_cv {
     background: linear-gradient(to right, 
@@ -38,13 +92,26 @@ body {
     height: auto;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-
+.deckblatt_header{
+    width: 300px;
+    height: 0;
+    text-align: center;
+    margin-left: -44px;
+}
+.deckblatt_datum{
+    padding-top: 200px;
+    width: 300px;
+}
+.deckblatt_kontaktInfo{
+    padding-top: 200px;
+    width: 300px;
+}
 @page {
     size: A4;
     margin: 0;
