@@ -1,69 +1,70 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     font-family: 'Helvetica', sans-serif;
 }
-a{
+a {
     text-decoration: none;
     color: black;
 }
-a:hover{
+a:hover {
     text-decoration: none;
     color: rgb(148, 83, 81);
 }
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: rgb(219, 219, 219);
     background: rgb(148, 83, 81);
-  }
-  
-  ::selection {
+}
+
+::selection {
     color: rgb(219, 219, 219);
     background: rgb(148, 83, 81);
-  }
-h1{
+}
+h1 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 26px;
     margin: 0;
     padding: 0;
 }
-h2{
+h2 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 24px;
     margin: 0;
     padding: 0;
 }
-h3{
+h3 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
-h4{
+h4 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 20px;
     margin: 0;
     padding: 0;
 }
-h5{
+h5 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 18px;
     margin: 0;
     padding: 0;
 }
-h6{
+h6 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
-p{
+p {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -78,28 +79,46 @@ p{
     width: 21cm;
     min-height: 29.7cm;
     margin: 1cm auto;
-    border: 1px #D3D3D3 solid;
+    border: 1px #d3d3d3 solid;
     border-radius: 5px;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .vorlage_deckblatt {
-    background: linear-gradient(to right, 
-    #363636 7%, #FFFFFF 7%, #FFFFFF 12%, #363636 12%,  #363636 88%, #FFFFFF 88%, #FFFFFF 93%, #363636 93%); 
+    background: linear-gradient(
+        to right,
+        #363636 7%,
+        #ffffff 7%,
+        #ffffff 12%,
+        #363636 12%,
+        #363636 88%,
+        #ffffff 88%,
+        #ffffff 93%,
+        #363636 93%
+    );
     height: 29.68cm;
     width: 118px;
 }
 .vorlage_cv {
-    background: linear-gradient(to right, 
-    #363636 3%, #FFFFFF 3%, #FFFFFF 5.6%, #363636 5.6%,  #363636 94%, #FFFFFF 94%, #FFFFFF 96.6%, #363636 96.6%); 
+    background: linear-gradient(
+        to right,
+        #363636 3%,
+        #ffffff 3%,
+        #ffffff 5.6%,
+        #363636 5.6%,
+        #363636 94%,
+        #ffffff 94%,
+        #ffffff 96.6%,
+        #363636 96.6%
+    );
     height: 29.68cm;
     width: 255px;
 }
-.content_deckblatt{
+.content_deckblatt {
     padding-left: 270px;
 }
-.deckblatt_foto{
+.deckblatt_foto {
     padding-top: 96px;
     width: 212px;
     height: auto;
@@ -112,66 +131,116 @@ p{
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-.deckblatt_header{
+.deckblatt_header {
     width: 300px;
     text-align: center;
     margin-left: -44px;
 }
-.deckblatt_datum{
+.deckblatt_datum {
     padding-top: 250px;
     width: 300px;
 }
-.deckblatt_kontaktInfo{
+.deckblatt_kontaktInfo {
     padding-top: 200px;
     width: 300px;
 }
-.cv_personlichesBlock{
+.cv_personlichesBlock {
     width: 249px;
     margin: 0 auto;
     position: absolute;
-    padding-top: 90px;
+    padding-top: 50px;
 }
-.cv_sprachenBlock{
+.cv_sprachenBlock {
     width: 249px;
     margin: 0 auto;
     position: absolute;
-    padding-top: 390px;
+    padding-top: 310px;
 }
-.info_block_Header{
+.info_block_Header {
     text-align: center;
-    color: #7E6132;
+    color: #7e6132;
+    margin-left: 10px;
+    padding-bottom: 20px;
 }
-.personliches{
-    padding-bottom: 30px;
-}
-.info_block_beschriftung{
+.info_block_beschriftung {
     text-align: center;
     color: #727272;
     padding-top: 5px;
 }
-.info_block_text{
+.info_block_text {
     text-align: center;
     color: #ffffff;
 }
-.line1{
+.line1 {
     padding-top: 50px;
     margin: 0 auto;
     width: 200px;
     border-bottom: 1px solid rgb(194, 194, 194);
 }
-.line2{
+.line2 {
     padding-top: 50px;
     margin: 0 auto;
     width: 200px;
     border-bottom: 1px solid rgb(194, 194, 194);
 }
-.circle_fullscale{
-    margin: 30px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: rgb(248, 248, 248) solid;
+
+/* START - Sprachen percentage circle CSS*/
+.sprachen_wrapper1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-left: 5px;
 }
+.sprachen_wrapper2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-left: 5px;
+}
+.single-chart {
+    width: 38%;
+    margin: 7px;
+    justify-content: space-around;
+}
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+.circle-bg {
+    fill: none;
+    stroke: #595959;
+    stroke-width: 2;
+}
+.circle {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 10s ease-out forwards;
+}
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+.circular-chart.orange .circle {
+    stroke: white;
+}
+.circular-chart.green .circle {
+    stroke: white;
+}
+.circular-chart.blue .circle {
+    stroke: white;
+}
+.percentage {
+    fill: white;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+/* END- Sprachen percentage circle CSS*/
+
 @page {
     size: A4;
     margin: 0;
