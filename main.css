@@ -10,17 +10,17 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: rgb(148, 83, 81);
+    color: #f06363;
 }
 ::-moz-selection {
     /* Code for Firefox */
-    color: rgb(219, 219, 219);
-    background: rgb(148, 83, 81);
+    color: black;
+    background: #ffe1b1;
 }
 
 ::selection {
-    color: rgb(219, 219, 219);
-    background: rgb(148, 83, 81);
+    color: black;
+    background: #ffe1b1;
 }
 h1 {
     font-family: 'Helvetica', sans-serif;
@@ -146,7 +146,7 @@ p {
 }
 .cv_personlichesBlock {
     width: 249px;
-    margin: 0 auto;
+
     position: absolute;
     padding-top: 50px;
 }
@@ -155,6 +155,11 @@ p {
     margin: 0 auto;
     position: absolute;
     padding-top: 310px;
+}
+.cv_kontaktBlock {
+    width: 249px;
+    position: absolute;
+    padding-top: 740px;
 }
 .info_block_Header {
     text-align: center;
@@ -166,10 +171,21 @@ p {
     text-align: center;
     color: #727272;
     padding-top: 5px;
+    margin-left: 5px;
 }
 .info_block_text {
     text-align: center;
     color: #ffffff;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+.info_block_text a {
+    text-align: center;
+    color: #ffffff;
+    margin-left: 5px;
+}
+.info_block_text a:hover {
+    color: #f06363;
 }
 .line1 {
     padding-top: 50px;
@@ -240,6 +256,37 @@ p {
     text-anchor: middle;
 }
 /* END- Sprachen percentage circle CSS*/
+
+.phone_img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.mail_img {
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.instagram_img {
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.location_img {
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
 
 @page {
     size: A4;
