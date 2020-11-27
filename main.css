@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #fafafa;
@@ -81,42 +82,23 @@ p {
     margin: 1cm auto;
     border: 1px #d3d3d3 solid;
     border-radius: 5px;
-    background: white;
+    background: white !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .vorlage_deckblatt {
-    background: linear-gradient(
-        to right,
-        #363636 7%,
-        #ffffff 7%,
-        #ffffff 12%,
-        #363636 12%,
-        #363636 88%,
-        #ffffff 88%,
-        #ffffff 93%,
-        #363636 93%
-    );
+    background: linear-gradient(to right, #363636 7%, #ffffff 7%, #ffffff 12%, #363636 12%, #363636 88%, #ffffff 88%, #ffffff 93%, #363636 93%);
     height: 29.68cm;
     width: 118px;
 }
 .vorlage_cv {
-    background: linear-gradient(
-        to right,
-        #363636 3%,
-        #ffffff 3%,
-        #ffffff 5.6%,
-        #363636 5.6%,
-        #363636 94%,
-        #ffffff 94%,
-        #ffffff 96.6%,
-        #363636 96.6%
-    );
+    background: linear-gradient(to right, #363636 3%, #ffffff 3%, #ffffff 5.6%, #363636 5.6%, #363636 94%, #ffffff 94%, #ffffff 96.6%, #363636 96.6%);
     height: 29.68cm;
     width: 255px;
 }
 .content_deckblatt {
-    padding-left: 270px;
+    padding-left: 335px;
+    text-align: center;
 }
 .deckblatt_foto {
     padding-top: 96px;
@@ -139,10 +121,12 @@ p {
 .deckblatt_datum {
     padding-top: 250px;
     width: 300px;
+    margin-left: -44px;
 }
 .deckblatt_kontaktInfo {
     padding-top: 200px;
     width: 300px;
+    margin-left: -44px;
 }
 .cv_personlichesBlock {
     width: 249px;
@@ -199,6 +183,12 @@ p {
     width: 200px;
     border-bottom: 1px solid rgb(194, 194, 194);
 }
+.line3 {
+    padding-top: 5px;
+    margin-bottom: 0px;
+    width: 520px;
+    border-bottom: 1.8px solid #363636;
+}
 
 /* START - Sprachen percentage circle CSS*/
 .sprachen_wrapper1 {
@@ -233,7 +223,7 @@ p {
     fill: none;
     stroke-width: 2;
     stroke-linecap: round;
-    animation: progress 10s ease-out forwards;
+    animation: progress 20s ease-out forwards;
 }
 @keyframes progress {
     0% {
