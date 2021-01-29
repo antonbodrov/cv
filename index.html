@@ -4,13 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" href="normilize.css" />
+        <link rel="stylesheet" href="css/normilize.css" />
 
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="css/main.css" />
 
         <title>Anton Bodrov CV</title>
     </head>
     <body>
+        <div class="btn_print_container">
+            <button class="btn_print" type="button" onclick="printJS('pdf/cv.pdf')">
+                <p class="mobile">PDF</p>
+                DRUCKEN
+            </button>
+        </div>
+
         <div class="cv">
             <div class="page">
                 <div class="vorlage_deckblatt">
@@ -591,6 +598,7 @@
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/print.min.js"></script>
     </body>
 </html>

@@ -1,10 +1,10 @@
-body {
+/* body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #fafafa;
     font-family: 'Helvetica', sans-serif;
-}
+} */
 a {
     text-decoration: none;
     color: black;
@@ -79,7 +79,7 @@ p {
 } */
 .page {
     width: 21cm;
-    min-height: 29.7cm;
+    height: 29.7cm;
     margin: 1cm auto;
     border: 1px #d3d3d3 solid;
     border-radius: 5px;
@@ -89,12 +89,12 @@ p {
 }
 .vorlage_deckblatt {
     background: linear-gradient(to right, #363636 7%, #ffffff 7%, #ffffff 12%, #363636 12%, #363636 88%, #ffffff 88%, #ffffff 93%, #363636 93%);
-    height: 29.68cm;
+    height: 29.7cm;
     width: 118px;
 }
 .vorlage_cv {
     background: linear-gradient(to right, #363636 3%, #ffffff 3%, #ffffff 5.6%, #363636 5.6%, #363636 94%, #ffffff 94%, #ffffff 96.6%, #363636 96.6%);
-    height: 29.68cm;
+    height: 29.7cm;
     width: 255px;
 }
 .content_deckblatt {
@@ -279,6 +279,59 @@ p {
     padding-bottom: 5px;
 }
 
+.btn_print_container {
+    width: 100%;
+    max-width: 1090px;
+    position: fixed;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.btn_print {
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(178, 178, 178);
+    border: none;
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    opacity: 85%;
+    border-radius: 50%;
+    float: right;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.btn_print:hover {
+    background-color: #28ae79;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.btn_print:active {
+    background-color: #15704c;
+}
+
+.mobile {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-top: 3px;
+}
+
 @page {
     size: A4;
     margin: 0;
@@ -289,9 +342,72 @@ p {
         border: initial;
         border-radius: initial;
         width: initial;
+        height: 29.6cm;
         min-height: initial;
+        max-height: initial;
         box-shadow: initial;
         background: initial;
         page-break-after: always;
     }
+    .btn_print {
+        display: none !important;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .btn_print_container {
+        width: 100%;
+        max-width: 1090px;
+        position: fixed;
+        left: 50%;
+        bottom: 1%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .btn_print {
+        margin: 20px;
+        width: 160px;
+        height: 160px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: rgb(178, 178, 178);
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        opacity: 85%;
+        border-radius: 50%;
+        float: right;
+        letter-spacing: 1px;
+        font-weight: bold;
+        padding-bottom: 12px;
+    }
+    .mobile {
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
