@@ -72,10 +72,11 @@ p {
     margin: 0;
     padding: 0;
 }
-* {
+/* * {
+    
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-}
+} */
 .page {
     width: 21cm;
     min-height: 29.7cm;
