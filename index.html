@@ -12,7 +12,15 @@
     </head>
     <body>
         <div class="btn_print_container">
-            <button class="btn_print" type="button" onclick="printJS('pdf/cv.pdf')">
+            <button
+                class="btn_print"
+                type="button"
+                onclick=" printJS({
+                printable: ['pdf/cv-1.jpg', 'pdf/cv-2.jpg', 'pdf/cv-3.jpg'],
+                type: 'image',
+                imageStyle: 'width:100%; @media print {.printThisFull {width:100%; height:auto;page-break-after:always;}}'
+               })"
+            >
                 <p class="mobile">PDF</p>
                 DRUCKEN
             </button>
@@ -27,7 +35,7 @@
                         <h6 class="deckblatt_header">SOFTWARE ENGINEER</h6>
 
                         <p class="deckblatt_datum" style="font-size: 45px">LEBENSLAUF</p>
-                        <p id="datum" style="width: 300px; margin-left: -44px">Burgkirchen,</p>
+                        <p id="datum" style="width: 300px; margin-left: -44px">Burgkirchen, </p>
 
                         <p class="deckblatt_kontaktInfo">
                             Anton Bodrov<br />Altgendorferstr. 35<br />84508 Burgkirchen<br /><br />Email:
@@ -599,6 +607,6 @@
             </div>
         </div>
         <script src="js/script.js"></script>
-        <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+        <script src="js/print.min.js"></script>
     </body>
 </html>
