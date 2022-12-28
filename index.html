@@ -1,628 +1,796 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" href="css/normilize.css" />
 
-        <link rel="stylesheet" href="css/main.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/normilize.css" />
 
-        <title>Anton Bodrov CV</title>
-    </head>
-    <body>
-        <div class="btn_print_container">
-            <button
-                class="btn_print"
-                type="button"
-                onclick=" printJS({
-                printable: ['pdf/cv-1.jpg', 'pdf/cv-2.jpg', 'pdf/cv-3.jpg'],
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Anton Bodrov CV</title>
+</head>
+
+<body>
+    <div class="btn_print_container">
+        <button class="btn_print" type="button" onclick=" printJS({
+                printable: ['pdf/cv-1.jpg', 'pdf/cv-2.jpg', 'pdf/cv-3.jpg', 'pdf/cv-4.jpg'],
                 type: 'image',
                 imageStyle: 'width:100%; @media print {.printThisFull {width:100%; height:auto;page-break-after:always;}}'
-               })"
-            >
-                <p class="mobile">PDF</p>
-                DRUCKEN
-            </button>
-        </div>
+               })">
+            <p class="mobile">PDF</p>
+            DRUCKEN
+        </button>
+    </div>
 
-        <div class="cv">
-            <div class="page">
-                <div class="vorlage_deckblatt">
-                    <div class="content_deckblatt">
-                        <img class="deckblatt_foto" src="img/AB_Foto.png" alt="Anton Bodrov" />
-                        <h1 class="deckblatt_header">ANTON BODROV</h1>
-                        <h6 class="deckblatt_header">SOFTWARE ENTWICKLER</h6>
+    <div class="cv">
+        <div class="page">
+            <div class="vorlage_deckblatt">
+                <div class="content_deckblatt">
+                    <img class="deckblatt_foto" src="img/AB_Foto.png" alt="Anton Bodrov" />
+                    <h1 class="deckblatt_header">ANTON BODROV</h1>
+                    <h6 class="deckblatt_header">SOFTWARE ENTWICKLER</h6>
 
-                        <p class="deckblatt_datum" style="font-size: 45px">LEBENSLAUF</p>
-                        <p id="datum" style="width: 300px; margin-left: -44px">Burgkirchen,</p>
+                    <p class="deckblatt_datum" style="font-size: 45px">LEBENSLAUF</p>
+                    <p id="datum" style="width: 300px; margin-left: -44px">Burgkirchen,</p>
 
-                        <p class="deckblatt_kontaktInfo">
-                            Anton Bodrov<br />Altgendorferstr. 35<br />84508 Burgkirchen<br /><br />Email:
-                            <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
-                            <br />Fon.: 0151/43106638
-                        </p>
-                    </div>
+                    <p class="deckblatt_kontaktInfo">
+                        Anton Bodrov<br />Altgendorferstr. 35<br />84508 Burgkirchen<br /><br />Email:
+                        <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
+                        <br />Tel.: 0151/43106638
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <div class="page">
-                <div class="vorlage_cv">
-                    <div class="cv_kontaktBlock">
-                        <h4 class="info_block_Header">KONTAKT</h4>
-                        <center>
-                            <img class="phone_img" src="img/phone.png" alt="Phone" />
-                        </center>
-                        <h6 class="info_block_text">+49 151 43106638</h6>
-                        <center>
-                            <img class="mail_img" src="img/mail.png" alt="Mail" />
-                        </center>
-                        <p class="info_block_text">
-                            <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
-                        </p>
-                        <center>
-                            <img class="instagram_img" src="img/github.png" alt="Instagram" />
-                        </center>
-                        <p class="info_block_text">
-                            <a target="_blank" href="https://github.com/antonbodrov">github.com/antonbodrov</a>
-                        </p>
-                        <center>
-                            <img class="location_img" src="img/location.png" alt="Location" />
-                        </center>
-                        <p class="info_block_text">Altgendorferstr. 35,</p>
-                        <p class="info_block_text">84508 Burgkirchena.d. Alz</p>
+        <div class="page">
+            <div class="vorlage_cv">
+                <div class="cv_kontaktBlock">
+                    <h4 class="info_block_Header">KONTAKT</h4>
+                    <center>
+                        <img class="phone_img" src="img/phone.png" alt="Phone" />
+                    </center>
+                    <h6 class="info_block_text">+49 151 43106638</h6>
+                    <center>
+                        <img class="mail_img" src="img/mail.png" alt="Mail" />
+                    </center>
+                    <p class="info_block_text">
+                        <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
+                    </p>
+                    <center>
+                        <img class="instagram_img" src="img/github.png" alt="Instagram" />
+                    </center>
+                    <p class="info_block_text">
+                        <a target="_blank" href="https://github.com/antonbodrov">github.com/antonbodrov</a>
+                    </p>
+                    <center>
+                        <img class="location_img" src="img/location.png" alt="Location" />
+                    </center>
+                    <p class="info_block_text">Altgendorferstr. 35,</p>
+                    <p class="info_block_text">84508 Burgkirchena.d. Alz</p>
+                </div>
+
+                <div class="cv_sprachenBlock">
+                    <h4 class="info_block_Header">SPRACHEN</h4>
+                    <div class="sprachen_wrapper1">
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="info_block_text">DEUTSCH</p>
+                        </div>
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="info_block_text">RUSSISCH</p>
+                        </div>
+                    </div>
+                    <div class="sprachen_wrapper2">
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="19" y="20.35" class="percentage">50%</text>
+                            </svg>
+                            <p class="info_block_text">ENGLISCH</p>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                </div>
+                <div class="cv_personlichesBlock">
+                    <h4 class="info_block_Header">PERSÖNLICHES</h4>
+                    <p class="info_block_beschriftung">Geboren:</p>
+                    <p class="info_block_text">02.04.1992</p>
+                    <p class="info_block_beschriftung">Familienstand</p>
+                    <p class="info_block_text">verheiratet</p>
+                    <p class="info_block_beschriftung">Staatsangehörigkeit</p>
+                    <p class="info_block_text">deutsch</p>
+                    <div class="line1"></div>
+                </div>
+
+                <!-- START of Content -->
+                <div style="position: static; margin: 0; padding: 0; width: 20.2cm">
+                    <div>
+                        <!-- <h1 style="font-weight: 400; text-align: right; font-size: 35px; padding-top: 50px">ANTON<br />BODROV</h1> -->
+                        <p style="font-size: 14px; margin-left: 280px; padding-top: 33px"><span
+                                style="padding: 3px 207px; color: white; background-color: #363636">AKTUELLES</span></p>
                     </div>
 
-                    <div class="cv_sprachenBlock">
-                        <h4 class="info_block_Header">SPRACHEN</h4>
-                        <div class="sprachen_wrapper1">
-                            <div class="single-chart">
-                                <svg viewbox="0 0 36 36" class="circular-chart orange">
-                                    <path
-                                        class="circle-bg"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <path
-                                        class="circle"
-                                        stroke-dasharray="100, 100"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <text x="18" y="20.35" class="percentage">100%</text>
-                                </svg>
-                                <p class="info_block_text">DEUTSCH</p>
-                            </div>
-                            <div class="single-chart">
-                                <svg viewbox="0 0 36 36" class="circular-chart green">
-                                    <path
-                                        class="circle-bg"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <path
-                                        class="circle"
-                                        stroke-dasharray="100, 100"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <text x="18" y="20.35" class="percentage">100%</text>
-                                </svg>
-                                <p class="info_block_text">RUSSISCH</p>
-                            </div>
+                    <div style="margin-left: 280px; margin-top: 20px">
+                        <p style="font-size: 12px">CTS KG ALS ANWENDUNGSENTWICKLER</p>
+                        <div class="line3"></div>
+
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">04/2022 – 10/2022</p>
                         </div>
-                        <div class="sprachen_wrapper2">
-                            <div class="single-chart">
-                                <svg viewbox="0 0 36 36" class="circular-chart blue">
-                                    <path
-                                        class="circle-bg"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <path
-                                        class="circle"
-                                        stroke-dasharray="50, 100"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <text x="19" y="20.35" class="percentage">50%</text>
-                                </svg>
-                                <p class="info_block_text">ENGLISCH</p>
-                            </div>
+
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                ERP Systeme Entwicklung und Support <br />
+                                <a target="_blank" href="https://www.cts-schmid.de/">www.cts-schmid.de</a>
+                            </p>
                         </div>
-                        <div class="line2"></div>
-                    </div>
-                    <div class="cv_personlichesBlock">
-                        <h4 class="info_block_Header">PERSÖNLICHES</h4>
-                        <p class="info_block_beschriftung">Geboren:</p>
-                        <p class="info_block_text">02.04.1992</p>
-                        <p class="info_block_beschriftung">Familienstand</p>
-                        <p class="info_block_text">verheiratet</p>
-                        <p class="info_block_beschriftung">Staatsangehörigkeit</p>
-                        <p class="info_block_text">deutsch</p>
-                        <div class="line1"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li><b>Anwendungsentwicklung:</b> C#, MSSQL</li>
+                            <li><b>Frameworks:</b> .NET Framework</li>
+                            <li><b>Development Tools:</b> Visual Studio IDE, Venabo Ticketsystem, Postman, Confluence,
+                                Select Line ERP, Slack, Working Cloud Rechenzentrum, Team Viewer, WordPress,
+                                MS-SQL Server
+                            </li>
+                            <li>
+                                <b>Erfahrung:</b>
+                                <ul>
+                                    <li>Betreuung des bestehenden Kundenstammes mit der Select Line ERP</li>
+                                    <li>Problemanalyse und Fehlerbehebung per Fernwartung oder vor Ort beim
+                                        Kunden</li>
+                                    <li>Telefonsupport (Select Line ERP)</li>
+                                    <li>Administration von Datenbanken (MSSQL)</li>
+                                    <li>Abwicklung und Umsetzung von Kundenprojekten (C#)</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- START of Content -->
-                    <div style="position: static; margin: 0; padding: 0; width: 20.2cm">
-                        <div>
-                            <!-- <h1 style="font-weight: 400; text-align: right; font-size: 35px; padding-top: 50px">ANTON<br />BODROV</h1> -->
-                            <p style="font-size: 14px; margin-left: 280px; padding-top: 50px"><span style="padding: 3px 20px; color: white; background-color: #363636">AKTUELLES</span></p>
+                    <div style="margin-left: 280px; margin-top: 20px">
+                        <p style="font-size: 12px">AUSBILDUNG ALS FACHINFORMATIKER / ANWENDUNGSENTWICKLUNG</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">10/2019 – 07/2021</p>
                         </div>
-
-                        <div style="margin-left: 280px; margin-top: 20px">
-                            <p style="font-size: 12px">PRAKTIKUM ALS ANWENDUNGSENTWICKLER</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">10/2020 – 07/2021</p>
-                            </div>
-
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    Creative Software Teams GmbH <br />
-                                    <a target="_blank" href="https://www.creativesoftware.de/">www.creativesoftware.de</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li><b>Programmiersprachen:</b> JavaScript (ES6), TypeScript</li>
-                                <li><b>Frameworks:</b> Angular, Bootstrap</li>
-                                <li><b>Development Tools:</b> NPM, Visual Studio Code IDE, Easy Redmine</li>
-                                <li>
-                                    <b>Projekte:</b>
-                                    <ol>
-                                        <li>XML to JSON Konvertierung - Formular erzeugen und mit Daten ausfüllen</li>
-                                        <li>Entwicklung einer Web-Oberfläche für Arbeitszeiterfassung der Mitarbeiter</li>
-                                    </ol>
-
-
-
-
-
-                                    <!-- XML to JSON Konvertierung und anhand dieser Datei Formular <br />
-                                    erzeugen. Dazu wurde noch JSON-Schema für Validierung Felder verwendet -->
-                                </li>
-                            </ul>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                CBZ Landshut GmbH <br />
+                                <a target="_blank" href="http://www.cbz.de">www.cbz.de</a>
+                            </p>
                         </div>
-
-                        <div style="margin-left: 280px; margin-top: 20px">
-                            <p style="font-size: 12px">AUSBILDUNG ALS FACHINFORMATIKER / ANWENDUNGSENTWICKLUNG</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">10/2019 – 07/2021</p>
-                            </div>
-
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    CBZ Landshut GmbH <br />
-                                    <a target="_blank" href="http://www.cbz.de">www.cbz.de</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li><b>Anwendungsentwicklung:</b> JavaScript(ES6), C#, JAVA, PHP, HTML5/CSS3, MySQL u.a.</li>
-                                <li><b>Systemintegration:</b> Netzwerk, Linux, Hardware, VMware Virtualisierung, Remote Desktop, Windows Server, Backup/Recovery, VPN Einrichtung u.a.</li>
-                                <!-- <li><b>CMS:</b> Wordpress, Tilda, TYPO3</li>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li><b>Anwendungsentwicklung:</b> JavaScript(ES6), C#, JAVA, PHP, HTML5/CSS3, MySQL u.a.
+                            </li>
+                            <li><b>Systemintegration:</b> Netzwerk, Linux, Hardware, VMware Virtualisierung, Remote
+                                Desktop, Windows Server, Backup/Recovery, VPN Einrichtung u.a.</li>
+                            <!-- <li><b>CMS:</b> Wordpress, Tilda, TYPO3</li>
                                 <li><b>Development Tools:</b> Visual Studio Code IDE, Android Studio IDE, NetBeans IDE</li> -->
-                                <br>
-                                
-                                <li><b>Abschluss:</b> Fachinformatiker / Anwendungsentwicklung <br> <ul> <li> Abschlussprüfung erfolgreich bestanden</li> </ul>   </b></li>
-                                
-                                
-                                <li><b>IHK Projektarbeit:</b> Entwicklung einer Web-Oberfläche für Arbeitszeiterfassung der Mitarbeiter</b></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span style="padding: 3px 20px; color: white; background-color: #363636">PRAXISERFAHRUNG</span></p>
-                        </div>
-
-                        <div style="margin-left: 280px; padding-top: 20px">
-                            <p style="font-size: 12px">KLEINUNTERNEHMER GESCHÄFTSFÜHRER</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">05/2015 – 06/2020</p>
-                            </div>
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    Druckerei Produktion – Fotos auf Leinwand
-                                    <br />
-                                    <a target="_blank" href="http://www.instagift.de">www.instagift.de</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Online Druckerei</li>
-                                <li>Online Marketing</li>
-                                <li>Google Ads</li>
-                                <li>Web Analytics</li>
-                                <li>Search Engine Optimization</li>
-                                <li>Customer Relationship Management</li>
-                                <li>Content Management System</li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 20px">
-                            <p style="font-size: 12px">SILTRONIC AG IN BURGHAUSEN</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">10/2017 – 06/2019</p>
-                            </div>
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    Chemie Produktion
-                                    <br />
-                                    <a target="_blank" href="http://www.siltronic.com/">www.siltronic.com</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Silizium Scheiben für Prozessoren – Produktion und Verarbeitung</li>
-                                <li>Qualitäts Kontrolle</li>
-                                <li>Programmierbare Anlagenbedienung</li>
-                                <li>Prozessablauf Dokumentation</li>
-                                <li>Fehlermeldungen Behebung</li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 20px">
-                            <p style="font-size: 12px">AENOVA HOLDING GMBH IN TITTMONING</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">05/2017 – 09/2017</p>
-                            </div>
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    Chemie Produktion
-                                    <br />
-                                    <a target="_blank" href="http://www.aenova-group.com/">www.aenova-group.com</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Programmierbare Anlagenbedienung</li>
-                                <li>Prozessablauf Dokumentation</li>
-                                <li>Herstellung von Tabletten – Pharmaindustrie</li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; padding-top: 20px">
-                            <p style="font-size: 12px">SIEMENS GMBH HAUSGERÄTE IN TRAUNREUT</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">05/2015 – 11/2016</p>
-                            </div>
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    Elektrotechnik Produktion
-                                    <br />
-                                    <a target="_blank" href="http://www.bsh-group.com">www.bsh-group.com</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Lagerhaltung mit SAP Anwendung</li>
-                                <li>Qualitäts Kontrolle</li>
-
-                                <li>Programmierbare Anlagenbedienung</li>
-                                <li>Verpackung Automatisierung</li>
-                                <li>Elektrotechnik Montage</li>
-                            </ul>
-                        </div>
+                            <li><b>Abschluss:</b> Fachinformatiker / Anwendungsentwicklung <br>
+                                <ul>
+                                    <li> Abschlussprüfung erfolgreich bestanden</li>
+                                </ul> </b>
+                            </li>
+                            <li><b>IHK Projektarbeit:</b> Entwicklung einer Web-Oberfläche für Arbeitszeiterfassung der
+                                Mitarbeiter</b></li>
+                        </ul>
                     </div>
-                    <!-- END of Content -->
-                </div>
-            </div>
 
-            <div class="page">
-                <div class="vorlage_cv">
-                    <div class="cv_kontaktBlock">
-                        <h4 class="info_block_Header">KONTAKT</h4>
-                        <center>
-                            <img class="phone_img" src="img/phone.png" alt="Phone" />
-                        </center>
-                        <h6 class="info_block_text">+49 151 43106638</h6>
-                        <center>
-                            <img class="mail_img" src="img/mail.png" alt="Mail" />
-                        </center>
-                        <p class="info_block_text">
-                            <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
+                    <div>
+                        <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span
+                                style="padding: 3px 178px; color: white; background-color: #363636">PRAXISERFAHRUNG</span>
                         </p>
-                        <center>
-                            <img class="instagram_img" src="img/github.png" alt="Instagram" />
-                        </center>
-                        <p class="info_block_text">
-                            <a target="_blank" href="https://github.com/antonbodrov">github.com/antonbodrov</a>
-                        </p>
-                        <center>
-                            <img class="location_img" src="img/location.png" alt="Location" />
-                        </center>
-                        <p class="info_block_text">Altgendorferstr. 35,</p>
-                        <p class="info_block_text">84508 Burgkirchena.d. Alz</p>
                     </div>
 
-                    <div class="cv_sprachenBlock">
-                        <h4 class="info_block_Header">SPRACHEN</h4>
-                        <div class="sprachen_wrapper1">
-                            <div class="single-chart">
-                                <svg viewbox="0 0 36 36" class="circular-chart orange">
-                                    <path
-                                        class="circle-bg"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <path
-                                        class="circle"
-                                        stroke-dasharray="100, 100"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <text x="18" y="20.35" class="percentage">100%</text>
-                                </svg>
-                                <p class="info_block_text">DEUTSCH</p>
-                            </div>
-                            <div class="single-chart">
-                                <svg viewbox="0 0 36 36" class="circular-chart green">
-                                    <path
-                                        class="circle-bg"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <path
-                                        class="circle"
-                                        stroke-dasharray="100, 100"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <text x="18" y="20.35" class="percentage">100%</text>
-                                </svg>
-                                <p class="info_block_text">RUSSISCH</p>
-                            </div>
+                    <div style="margin-left: 280px; padding-top: 20px">
+                        <p style="font-size: 12px">KLEINUNTERNEHMER GESCHÄFTSFÜHRER</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">05/2015 – 01/2022</p>
                         </div>
-                        <div class="sprachen_wrapper2">
-                            <div class="single-chart">
-                                <svg viewbox="0 0 36 36" class="circular-chart blue">
-                                    <path
-                                        class="circle-bg"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <path
-                                        class="circle"
-                                        stroke-dasharray="50, 100"
-                                        d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
-                                    />
-                                    <text x="19" y="20.35" class="percentage">50%</text>
-                                </svg>
-                                <p class="info_block_text">ENGLISCH</p>
-                            </div>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                Druckerei Produktion – Fotos auf Leinwand
+                                <br />
+                                <a target="_blank" href="http://www.instagift.de">www.instagift.de</a>
+                            </p>
                         </div>
-                        <div class="line2"></div>
-                    </div>
-                    <div class="cv_personlichesBlock">
-                        <h4 class="info_block_Header">PERSÖNLICHES</h4>
-                        <p class="info_block_beschriftung">Geboren:</p>
-                        <p class="info_block_text">02.04.1992</p>
-                        <p class="info_block_beschriftung">Familienstand</p>
-                        <p class="info_block_text">verheiratet</p>
-                        <p class="info_block_beschriftung">Staatsangehörigkeit</p>
-                        <p class="info_block_text">deutsch</p>
-                        <div class="line1"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Online Druckerei</li>
+                            <li>Online Marketing</li>
+                            <li>Google Ads</li>
+                            <li>Web Analytics</li>
+                            <li>Search Engine Optimization</li>
+                            <li>Customer Relationship Management</li>
+                            <li>Content Management System</li>
+                        </ul>
                     </div>
 
-                    <!-- START of Content -->
-                    <div style="position: static; margin: 0; padding: 0; width: 20.2cm">
-                        <div style="margin-left: 280px; padding-top: 50px">
-                            <p style="font-size: 12px">SITECO GMBH TREUNREUT</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">06/2010 – 09/2012</p>
-                            </div>
-
-                            <div style="margin-top: -10px">
-                                <p style="font-size: 11px">
-                                    Beleuchtungstechnik Produktion <br />
-                                    <a target="_blank" href="http://www.siteco.de">www.siteco.de</a>
-                                </p>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Programmierbare Anlagenbedienung</li>
-                                <li>Lagerlogistik SAP Anwendungen</li>
-                                <li>Straßen Beleuchtungstechnik Montage</li>
-                            </ul>
+                    <div style="margin-left: 280px; margin-top: 20px">
+                        <p style="font-size: 12px">PRAKTIKUM ALS ANWENDUNGSENTWICKLER</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">10/2020 – 07/2021</p>
                         </div>
-
-                        <div>
-                            <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span style="padding: 3px 20px; color: white; background-color: #363636">BILDUNGSWEG</span></p>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                Creative Software Teams GmbH <br />
+                                <a target="_blank" href="https://www.creativesoftware.de/">www.creativesoftware.de</a>
+                            </p>
                         </div>
-
-                        <div style="margin-left: 280px; margin-top: 20px">
-                            <p style="font-size: 12px">EXTERNE QUALI-KURS IN TRAUNREUT</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">2012 – 2013</p>
-                            </div>
-
-                            <div style="margin-top: -10px"></div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Qualifizierenden Abschluss der Mittelschule bestanden</li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <p style="font-size: 12px">AUSBILDUNG ALS BÄCKER / KONDITOR</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">2009 – 2010</p>
-                            </div>
-
-                            <div style="margin-top: -10px"></div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Ausbildung wurde wegen Insolvenz der Firma nicht abgeschlossen</li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <p style="font-size: 12px">HAUPTSCHULE IN TRAUNREUT</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">2005 – 2009</p>
-                            </div>
-
-                            <div style="margin-top: -10px"></div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li>Hauptschulabschluss der Mittelschule bestanden</li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <p style="font-size: 12px">MIT FAMILIE NACH DEUTSCHLAND UMGEZOGEN</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">2005</p>
-                            </div>
-
-                            <div style="margin-top: -10px"></div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <!-- <li>muster text</li> -->
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <p style="font-size: 12px">GRUND- UND HAUPTSCHULE IN RUSSLAND</p>
-                            <div class="line3"></div>
-
-                            <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                <p style="font-size: 11px; color: white; text-align: center">1998 - 2005</p>
-                            </div>
-
-                            <div style="margin-top: -10px"></div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <!-- <li>muster text</li> -->
-                            </ul>
-                        </div>
-
-                        <div>
-                            <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span style="padding: 3px 20px; color: white; background-color: #363636">SONSTIGES</span></p>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <div style="margin-top: -10px"></div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <li><p style="font-size: 12px">FÜHRERSCHEIN KLASSE B</p></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span style="padding: 3px 20px; color: white; background-color: #363636">SKILLS</span></p>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <div style="margin-top: -10px">
-                                <div class="line3"></div>
-
-                                <div style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                    <p style="font-size: 11px; color: white; text-align: center">CODING & DESIGN</p>
-                                </div>
-                            </div>
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <div style="display: inline-block; width: 45px">
-                                    <img src="img/angular.svg" alt="Angular" width="45" height="auto" />
-                                    <p style="font-size: 12px; text-align: center">Angular</p>
-                                </div>
-
-                                <div style="display: inline-block; margin-left: 25px; width: 50px">
-                                    <img src="img/sass.png" alt="SASS" width="50" height="auto" style="padding-bottom: 3px" />
-                                    <p style="font-size: 12px; text-align: center">SASS</p>
-                                </div>
-
-                                <div style="display: inline-block; margin-left: 10px; width: 50px">
-                                    <img src="img/git.png" alt="Git" width="50" height="auto" style="padding-bottom: 3px" />
-                                    <p style="font-size: 12px; text-align: center">Git</p>
-                                </div>
-
-                                <div style="display: inline-block; margin-left: 10px; width: 80px">
-                                    <img src="img/js-ts.jpg" alt="JavaScript / TypeScript" width="80" height="auto" style="margin-left: 17px; padding-bottom: 3px" />
-                                    <p style="font-size: 12px; text-align: center">TypeScript/JavaScript</p>
-                                </div>
-
-                                <div style="display: inline-block; margin-left: 40px; width: 80px">
-                                    <img src="img/mysql.png" alt="MySQL" width="80" height="auto" />
-                                    <p style="font-size: 12px; text-align: center">MySQL</p>
-                                </div>
-
-                                <div style="display: inline-block; margin-top: 15px; width: 90px">
-                                    <img src="img/html-css.png" alt="HTML5 / CSS3" width="90" height="auto" style="margin-bottom: -5px" />
-                                    <p style="font-size: 12px; margin-top: -5px; text-align: center">HTML5 / CSS3</p>
-                                </div>
-
-                                <div style="display: inline-block; width: 130px; padding-left: 10px">
-                                    <img src="img/photoshop.png" alt="Adobe Photoshop" width="130" height="auto" style="margin-bottom: -3px" />
-                                    <p style="font-size: 12px; text-align: center">Adobe Photoshop</p>
-                                </div>
-
-                                <div style="display: inline-block; width: 65px; margin-left: 15px">
-                                    <img src="img/bootstrap.png" alt="Bootstrap Framework" width="55" height="auto" style="margin-bottom: 2px; margin-left: 3px" />
-                                    <p style="font-size: 12px; text-align: center">Bootstrap 4</p>
-                                </div>
-
-                                <div style="display: inline-block; width: 80px; margin-left: 15px">
-                                    <img src="img/xml-json.png" alt="XML / JSON" width="80" height="auto" style="margin-bottom: 1px" />
-                                    <p style="font-size: 12px; text-align: center">XML / JSON</p>
-                                </div>
-                            </ul>
-                        </div>
-
-                        <div style="margin-left: 280px; margin-top: 30px">
-                            <div style="margin-top: -10px">
-                                <div class="line3"></div>
-
-                                <div style="margin-left: 370px; width: 125px; height: 29px; display: flex; justify-content: center; align-items: center; background: #363636">
-                                    <p style="font-size: 11px; color: white; text-align: center">PROJECT MANAGEMENT</p>
-                                </div>
-                            </div>
-
-                            <ul style="margin-left: -20px; font-size: 11px">
-                                <div style="display: inline-block; width: 120px">
-                                    <img src="img/easy-redmine.png" alt="Easy Redmine" width="120" height="auto" style="padding-bottom: 10px" />
-                                    <p style="font-size: 12px; text-align: center">Easy Redmine</p>
-                                </div>
-
-                                <div style="display: inline-block; width: 100px">
-                                    <img src="img/vs-code.png" alt="Visual Studio" width="40" height="auto" style="margin-left: 25px; padding-bottom: 4px" />
-                                    <p style="font-size: 12px; text-align: center">Visual Studio</p>
-                                </div>
-
-                                <div style="display: inline-block; width: 130px">
-                                    <img src="img/ms-teams.png" alt="Microsoft Teams" width="130" height="auto" style="margin-bottom: 5px" />
-                                    <p style="font-size: 12px; text-align: center">Microsoft Teams</p>
-                                </div>
-                            </ul>
-                        </div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li><b>Programmiersprachen:</b> JavaScript (ES6), TypeScript</li>
+                            <li><b>Frameworks:</b> Angular, Bootstrap</li>
+                            <li><b>Development Tools:</b> NPM, Visual Studio Code IDE, Easy Redmine</li>
+                            <li>
+                                <b>Projekte:</b>
+                                <ul>
+                                    <li>XML to JSON Konvertierung - Formular erzeugen und mit Daten ausfüllen</li>
+                                    <li>Entwicklung einer Web-Oberfläche für Arbeitszeiterfassung der Mitarbeiter</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- END of Content -->
+
+                    <div style="margin-left: 280px; margin-top: 20px">
+                        <p style="font-size: 12px">SILTRONIC AG IN BURGHAUSEN</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">10/2017 – 06/2019</p>
+                        </div>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                Chemie Produktion
+                                <br />
+                                <a target="_blank" href="http://www.siltronic.com/">www.siltronic.com</a>
+                            </p>
+                        </div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Silizium Scheiben für Prozessoren – Produktion und Verarbeitung</li>
+                            <li>Qualitäts Kontrolle</li>
+                            <li>Programmierbare Anlagenbedienung</li>
+                            <li>Prozessablauf Dokumentation</li>
+                            <li>Fehlermeldungen Behebung</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 20px">
+                        <p style="font-size: 12px">AENOVA HOLDING GMBH IN TITTMONING</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">05/2017 – 09/2017</p>
+                        </div>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                Chemie Produktion
+                                <br />
+                                <a target="_blank" href="http://www.aenova-group.com/">www.aenova-group.com</a>
+                            </p>
+                        </div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Programmierbare Anlagenbedienung</li>
+                            <li>Prozessablauf Dokumentation</li>
+                            <li>Herstellung von Tabletten – Pharmaindustrie</li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- END of Content -->
             </div>
         </div>
-        <script src="js/script.js"></script>
-        <script src="js/print.min.js"></script>
-    </body>
+
+        <div class="page">
+            <div class="vorlage_cv">
+                <div class="cv_kontaktBlock">
+                    <h4 class="info_block_Header">KONTAKT</h4>
+                    <center>
+                        <img class="phone_img" src="img/phone.png" alt="Phone" />
+                    </center>
+                    <h6 class="info_block_text">+49 151 43106638</h6>
+                    <center>
+                        <img class="mail_img" src="img/mail.png" alt="Mail" />
+                    </center>
+                    <p class="info_block_text">
+                        <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
+                    </p>
+                    <center>
+                        <img class="instagram_img" src="img/github.png" alt="Instagram" />
+                    </center>
+                    <p class="info_block_text">
+                        <a target="_blank" href="https://github.com/antonbodrov">github.com/antonbodrov</a>
+                    </p>
+                    <center>
+                        <img class="location_img" src="img/location.png" alt="Location" />
+                    </center>
+                    <p class="info_block_text">Altgendorferstr. 35,</p>
+                    <p class="info_block_text">84508 Burgkirchena.d. Alz</p>
+                </div>
+
+                <div class="cv_sprachenBlock">
+                    <h4 class="info_block_Header">SPRACHEN</h4>
+                    <div class="sprachen_wrapper1">
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="info_block_text">DEUTSCH</p>
+                        </div>
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="info_block_text">RUSSISCH</p>
+                        </div>
+                    </div>
+                    <div class="sprachen_wrapper2">
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="19" y="20.35" class="percentage">50%</text>
+                            </svg>
+                            <p class="info_block_text">ENGLISCH</p>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                </div>
+                <div class="cv_personlichesBlock">
+                    <h4 class="info_block_Header">PERSÖNLICHES</h4>
+                    <p class="info_block_beschriftung">Geboren:</p>
+                    <p class="info_block_text">02.04.1992</p>
+                    <p class="info_block_beschriftung">Familienstand</p>
+                    <p class="info_block_text">verheiratet</p>
+                    <p class="info_block_beschriftung">Staatsangehörigkeit</p>
+                    <p class="info_block_text">deutsch</p>
+                    <div class="line1"></div>
+                </div>
+
+                <!-- START of Content -->
+                <div style="position: static; margin: 0; padding: 0; width: 20.2cm">
+                    <div style="margin-left: 280px; padding-top: 50px">
+                        <p style="font-size: 12px">SIEMENS GMBH HAUSGERÄTE IN TRAUNREUT</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">05/2015 – 11/2016</p>
+                        </div>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                Elektrotechnik Produktion
+                                <br />
+                                <a target="_blank" href="http://www.bsh-group.com">www.bsh-group.com</a>
+                            </p>
+                        </div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Lagerhaltung mit SAP Anwendung</li>
+                            <li>Qualitäts Kontrolle</li>
+                            <li>Programmierbare Anlagenbedienung</li>
+                            <li>Verpackung Automatisierung</li>
+                            <li>Elektrotechnik Montage</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; padding-top: 20px">
+                        <p style="font-size: 12px">SITECO GMBH TREUNREUT</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">06/2010 – 09/2012</p>
+                        </div>
+                        <div style="margin-top: -10px">
+                            <p style="font-size: 11px">
+                                Beleuchtungstechnik Produktion <br />
+                                <a target="_blank" href="http://www.siteco.de">www.siteco.de</a>
+                            </p>
+                        </div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Programmierbare Anlagenbedienung</li>
+                            <li>Lagerlogistik SAP Anwendungen</li>
+                            <li>Straßen Beleuchtungstechnik Montage</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span
+                                style="padding: 3px 195px; color: white; background-color: #363636">BILDUNGSWEG</span>
+                        </p>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 20px">
+                        <p style="font-size: 12px">EXTERNE QUALI-KURS IN TRAUNREUT</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">2012 – 2013</p>
+                        </div>
+                        <div style="margin-top: -10px"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Qualifizierenden Abschluss der Mittelschule bestanden</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <p style="font-size: 12px">AUSBILDUNG ALS BÄCKER / KONDITOR</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">2009 – 2010</p>
+                        </div>
+                        <div style="margin-top: -10px"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Ausbildung wurde wegen Insolvenz der Firma nicht abgeschlossen</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <p style="font-size: 12px">HAUPTSCHULE IN TRAUNREUT</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">2005 – 2009</p>
+                        </div>
+                        <div style="margin-top: -10px"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>Hauptschulabschluss der Mittelschule bestanden</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <p style="font-size: 12px">MIT FAMILIE NACH DEUTSCHLAND UMGEZOGEN</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">2005</p>
+                        </div>
+                        <div style="margin-top: -10px"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <!-- <li>muster text</li> -->
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <p style="font-size: 12px">GRUND- UND HAUPTSCHULE IN RUSSLAND</p>
+                        <div class="line3"></div>
+                        <div
+                            style="margin-left: 370px; width: 125px; height: 18px; display: flex; justify-content: center; align-items: center; background: #363636">
+                            <p style="font-size: 11px; color: white; text-align: center">1998 - 2005</p>
+                        </div>
+                        <div style="margin-top: -10px"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <!-- <li>muster text</li> -->
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 14px; margin-left: 280px; margin-top: 70px"><span
+                                style="padding: 3px 207px; color: white; background-color: #363636">SONSTIGES</span></p>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <div style="margin-top: -10px"></div>
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <li>
+                                <p style="font-size: 12px">FÜHRERSCHEIN KLASSE B</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END of Content -->
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="vorlage_cv">
+                <div class="cv_kontaktBlock">
+                    <h4 class="info_block_Header">KONTAKT</h4>
+                    <center>
+                        <img class="phone_img" src="img/phone.png" alt="Phone" />
+                    </center>
+                    <h6 class="info_block_text">+49 151 43106638</h6>
+                    <center>
+                        <img class="mail_img" src="img/mail.png" alt="Mail" />
+                    </center>
+                    <p class="info_block_text">
+                        <a href="mailto:a.bodrov@web.de">a.bodrov@web.de</a>
+                    </p>
+                    <center>
+                        <img class="instagram_img" src="img/github.png" alt="Instagram" />
+                    </center>
+                    <p class="info_block_text">
+                        <a target="_blank" href="https://github.com/antonbodrov">github.com/antonbodrov</a>
+                    </p>
+                    <center>
+                        <img class="location_img" src="img/location.png" alt="Location" />
+                    </center>
+                    <p class="info_block_text">Altgendorferstr. 35,</p>
+                    <p class="info_block_text">84508 Burgkirchena.d. Alz</p>
+                </div>
+
+                <div class="cv_sprachenBlock">
+                    <h4 class="info_block_Header">SPRACHEN</h4>
+                    <div class="sprachen_wrapper1">
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="info_block_text">DEUTSCH</p>
+                        </div>
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="info_block_text">RUSSISCH</p>
+                        </div>
+                    </div>
+                    <div class="sprachen_wrapper2">
+                        <div class="single-chart">
+                            <svg viewbox="0 0 36 36" class="circular-chart blue">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="19" y="20.35" class="percentage">50%</text>
+                            </svg>
+                            <p class="info_block_text">ENGLISCH</p>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                </div>
+                <div class="cv_personlichesBlock">
+                    <h4 class="info_block_Header">PERSÖNLICHES</h4>
+                    <p class="info_block_beschriftung">Geboren:</p>
+                    <p class="info_block_text">02.04.1992</p>
+                    <p class="info_block_beschriftung">Familienstand</p>
+                    <p class="info_block_text">verheiratet</p>
+                    <p class="info_block_beschriftung">Staatsangehörigkeit</p>
+                    <p class="info_block_text">deutsch</p>
+                    <div class="line1"></div>
+                </div>
+
+                <!-- START of Content -->
+                <div style="position: static; margin: 0; padding: 0; width: 20.2cm">
+                    <div style="margin-left: 280px; padding-top: 50px"></div>
+
+                    <div>
+                        <p style="font-size: 14px; margin-left: 280px; margin-top: 50px"><span
+                                style="padding: 3px 203px; color: white; background-color: #363636">ERFAHRUNG</span></p>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <div style="margin-top: -10px">
+                            <div class="line3"></div>
+                            <div
+                                style="margin-left: 370px; width: 125px; height: 29px; display: flex; justify-content: center; align-items: center; background: #363636">
+                                <p style="font-size: 11px; color: white; text-align: center">CODING / DESIGN / SYSTEM
+                                </p>
+                            </div>
+                        </div>
+                        <ul style="margin-left: -27px; font-size: 11px">
+                            <div style="display: inline-block; width: 130px; padding-left: 10px">
+                                <img src="img/photoshop.png" alt="Adobe Photoshop" width="130" height="auto"
+                                    style="margin-bottom: -3px" />
+                                <p style="font-size: 12px; text-align: center">Adobe Photoshop</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 15px; margin-top: 15px; width: 90px">
+                                <img src="img/html-css.png" alt="HTML5 / CSS3" width="90" height="auto"
+                                    style="margin-bottom: -5px" />
+                                <p style="font-size: 12px; margin-top: -5px; text-align: center">HTML5 / CSS3</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 15px; width: 80px">
+                                <img src="img/js-ts.jpg" alt="JavaScript / TypeScript" width="80" height="auto"
+                                    style="margin-left: 17px; padding-bottom: 3px" />
+                                <p style="font-size: 12px; text-align: center">TypeScript/JavaScript</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 55px; width: 45px">
+                                <img src="img/angular.svg" alt="Angular" width="45" height="auto" />
+                                <p style="font-size: 12px; text-align: center">Angular</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-top: 15px; width: 65px; margin-left: 15px">
+                                <img src="img/bootstrap.png" alt="Bootstrap Framework" width="55" height="auto"
+                                    style="margin-bottom: 2px; margin-left: 5px" />
+                                <p style="font-size: 12px; text-align: center">Bootstrap</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 65px; margin-left: 15px">
+                                <img src="img/wordpress-logo.svg" alt="WordPress" width="45" height="auto"
+                                    style="margin-left: 10px" />
+                                <p style="font-size: 12px; text-align: center">WordPress</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 95px">
+                                <img src="img/vs-code.png" alt="Visual Studio" width="40" height="auto"
+                                    style="margin-left: 25px; padding-bottom: 4px" />
+                                <p style="font-size: 12px; text-align: center">Visual Studio</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 0px; width: 50px">
+                                <img src="img/sass.png" alt="SASS" width="50" height="auto"
+                                    style="padding-bottom: 3px" />
+                                <p style="font-size: 12px; text-align: center">SASS</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 10px; width: 80px">
+                                <img src="img/mysql.png" alt="MySQL" width="80" height="auto" />
+                                <p style="font-size: 12px; text-align: center">MySQL</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 0px; width: 50px">
+                                <img src="img/git.png" alt="Git" width="50" height="auto" style="padding-bottom: 3px" />
+                                <p style="font-size: 12px; text-align: center">Git</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 80px; margin-left: 15px">
+                                <img src="img/xml-json.png" alt="XML / JSON" width="80" height="auto"
+                                    style="margin-bottom: 1px; margin-top: 10px;" />
+                                <p style="font-size: 12px; text-align: center">XML / JSON</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 80px; margin-left: 20px">
+                                <img src="img/cisco_logo-1000px.png" alt="Netzwerk" width="70" height="auto"
+                                    style="margin-bottom: 1px; margin-left: 5px" />
+                                <p style="font-size: 12px; text-align: center">Netzwerk</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 100px; margin-left: 20px">
+                                <img src="img/windows_server.png" alt="Windows Server" width="98" height="auto"
+                                    style="margin-bottom: 1px; margin-left: 0px" />
+                                <p style="font-size: 12px; text-align: center">Windows Server</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 100px; margin-left: 20px">
+                                <img src="img/windows-remote-dekstop.png" alt="Windows Remote Desktop" width="105"
+                                    height="auto" style="margin-bottom: -5px; margin-left: -5px" />
+                                <p style="font-size: 12px; text-align: center">RDP</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-top: 20px; width: 100px; margin-left: 20px">
+                                <img src="img/vmware-logo.png" alt="Virtualisierung" width="105" height="auto"
+                                    style="margin-bottom: 7px; margin-left: -3px" />
+                                <p style="font-size: 12px; text-align: center">Virtualisierung</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-top: 3px; width: 100px; margin-left: 30px">
+                                <img src="img/linux-logo.png" alt="Linux" width="100" height="auto"
+                                    style="margin-bottom: -8px; margin-left: -10px" />
+                                <p style="font-size: 12px; text-align: center">Linux</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-top: 0px; width: 10px; margin-left: 23px">
+                                <img src="img/vpn-logo.png" alt="VPN" width="32" height="auto"
+                                    style="margin-bottom: 1px; margin-left: -3px" />
+                                <p style="font-size: 12px; text-align: center">VPN</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-top: 10px; width: 100px; margin-left: 59px">
+                                <img src="img/sql-server.png" alt="SQL Server" width="105" height="auto"
+                                    style="margin-bottom: 5px; margin-left: -10px" />
+                                <p style="font-size: 12px; text-align: center">SQL Server</p>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 280px; margin-top: 30px">
+                        <div style="margin-top: -10px">
+                            <div class="line3"></div>
+                            <div
+                                style="margin-left: 370px; width: 125px; height: 29px; display: flex; justify-content: center; align-items: center; background: #363636">
+                                <p style="font-size: 11px; color: white; text-align: center">PROJECT MANAGEMENT</p>
+                            </div>
+                        </div>
+
+                        <ul style="margin-left: -20px; font-size: 11px">
+                            <div style="display: inline-block; width: 150px">
+                                <img src="img/easy-redmine.png" alt="Easy Redmine" width="140" height="auto"
+                                    style="padding-bottom: 5px" />
+                                <p style="font-size: 12px; text-align: center">Easy Redmine</p>
+                            </div>
+
+                            <div style="display: inline-block; margin-left: 30px; width: 130px">
+                                <img src="img/ms-teams.png" alt="Microsoft Teams" width="140" height="auto"
+                                    style="margin-bottom: 0px; margin-left: -10px;" />
+                                <p style="font-size: 12px; text-align: center">Microsoft Teams</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 130px; margin-left: 15px;">
+                                <img src="img/office365-logo.png" alt="Office 365" width="130" height="auto"
+                                    style="margin-bottom: 5px" />
+                                <p style="font-size: 12px; text-align: center">Office 365</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 130px; margin-left: 19px;">
+                                <img src="img/team-viewer-logo.png" alt="TeamViewer" width="140" height="auto"
+                                    style="margin-top: 20px; margin-left: -20px;" />
+                                <p style="font-size: 12px; text-align: center">TeamViewer</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 130px; margin-left: 10px;">
+                                <img src="img/selectline-logo.jpg" alt="SelectLine" width="130" height="auto"
+                                    style="margin-bottom: -3px; margin-left: -10px;" />
+                                <p style="font-size: 12px; text-align: center">ERP Select Line</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 130px; margin-left: 34px;">
+                                <img src="img/confluence-logo.png" alt="Confluence" width="145" height="auto"
+                                    style="margin-bottom: 8px; margin-left: -20px;" />
+                                <p style="font-size: 12px; text-align: center">Confluence</p>
+                            </div>
+
+                            <div style="display: inline-block; width: 130px; margin-left: 0px;">
+                                <img src="img/slack-logo.png" alt="Slack" width="120" height="auto"
+                                    style="margin-bottom: 4px; margin-top: 17px;" />
+                                <p style="font-size: 12px; text-align: center">Slack</p>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- END of Content -->
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/print.min.js"></script>
+</body>
+
 </html>
