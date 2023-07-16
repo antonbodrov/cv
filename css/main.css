@@ -102,9 +102,10 @@ p {
     text-align: center;
 }
 .deckblatt_foto {
-    padding-top: 96px;
+    margin-top: 96px;
     width: 212px;
     height: auto;
+    border-radius: 10px;
     margin-bottom: 20px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
